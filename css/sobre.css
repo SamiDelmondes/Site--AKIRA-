@@ -1,0 +1,261 @@
+@font-face {
+    font-family: tec;
+    src: url(../css/font/Blanka-Regular.otf);
+
+
+}
+
+@font-face {
+    font-family: ret;
+    src: url(../css/font/AdventPro-SemiBold.ttf);
+}
+
+*{
+
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    
+}
+body{
+    min-height: 100vh; /*minimo de altura, vh 20/100*/
+    
+}
+/*////////////menu///////////*/
+.emenu{
+    
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+}
+/*-----------fim do menu----------*/
+
+#text{
+    
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    font-family: ret;
+    font-weight: 100px;
+    
+    position:relative;
+    top: 50%;
+    left: 14%;
+    padding: 15px;
+}
+
+
+
+.infor2{
+    
+    height: 440px;
+}
+.gif {
+    
+    position: relative;
+    top: auto;
+    left: auto;
+}
+.gif img{
+    border: 4px solid red;
+    width: auto;
+    height: auto;
+
+    position: relative;
+    top: auto;
+    left: auto;
+}
+hr{
+    border: 0px;
+    background-color: rgb(255, 0, 0);
+    height: 2px;
+    width: 73%;
+}
+
+/*///////informações, caixa de sugestão ///////*/
+#form{
+    font-family: ret;
+    font-size: 17px;
+    
+   
+}
+
+.box{
+    /*border: 4px solid red ;*/
+    
+    position:relative;
+    width: 30%;
+    top: 50%;
+    left: 35%;
+    padding: 15px;
+    
+    
+}
+
+fieldset{
+    
+    border: 3px solid red;
+    background-color: black;
+    border-radius: 10px;
+    left: 30%;
+}
+
+legend{
+    border: 3px solid red ;
+    padding: 4px;
+    text-align: center;
+    background-color:red;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.inputbox{
+
+    background-color: black;
+    position: relative;
+}
+
+.inputUser{
+    
+    background: rgb(110, 110, 110);
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    border-radius: 2px;
+    font-size: 15px;
+    
+    height: 40px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.labelInput{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.inputUser:focus ~ .labelInput,.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 15px;
+    color: red;
+}
+
+#submit{
+    background-color: red;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-family: tec;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#submit:hover{
+    background-color: rgb(236, 65, 65);
+}
+
+
+/*------- fim, informações, caixa de sugestão-------------*/
+
+
+
+
+
+/*footer*/
+
+#main_footer{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    padding: 30px;
+    padding-top: 40px;
+    display: flex;
+    justify-content:space-around;
+}
+#main_footer a{
+    background-color: black;
+}
+.img_logo {
+
+    height: 70px;
+}
+.copy{
+    color: white;
+    /* display: flex;
+    justify-content: space-around; */
+    border: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+#redesociais{
+    background-color: #000000;
+}
+
+#redesociais a img{
+    
+    /*display: flex;*/
+    flex-direction: row;
+    height: 40px;
+    margin-top: 10px;
+    background-color:black;
+    padding: 0 10px;
+
+}
+
+
+/* efeito */
+a{
+    font-weight: bold;
+    font-size: large;
+    font-family: ret;
+    background-image: linear-gradient(
+        to right,
+        #ffffff 100%,
+        #ffffff 100%,
+        rgb(255, 255, 255) 100%
+
+    );
+    /*background-size: 200% 100%;*/
+    /*background-position: 10%;*/
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+a:before{
+    content: '';
+    background: #ff0000;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+   }
+   
+a:hover::before{
+     width: 100%;
+   }
+
+/*fim do efeito */
+/*https://youtu.be/iY1QHpp6iEE - link do criado do vídeo*/
